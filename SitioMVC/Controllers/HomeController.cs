@@ -8,7 +8,14 @@ public class HomeController : Controller
 {
     public IActionResult Index()
     {
-        return View();
+        List<Persona> personas = new()
+        {
+            new Persona { Id = Guid.NewGuid(), Nombre = "Juan" },
+            new Persona { Id = Guid.NewGuid(), Nombre = "María" },
+            new Persona { Id = Guid.NewGuid(), Nombre = "Pedro" }
+        };
+
+        return View(personas);
     }
 
     public IActionResult Privacy()

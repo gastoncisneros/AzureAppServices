@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SitioMVC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+29e7143301c8f62e1239146edc2ed7f06e452af7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f2ac6d854bbf9bd5cad32f51e5514df1c62612ca")]
 [assembly: System.Reflection.AssemblyProductAttribute("SitioMVC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SitioMVC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
