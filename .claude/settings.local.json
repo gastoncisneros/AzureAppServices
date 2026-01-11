@@ -8,7 +8,12 @@
       "Bash(else echo \".gitignore not found in current directory\")",
       "Bash(fi)",
       "Bash(git ls-tree:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(git push)",
+      "Bash(git config:*)",
+      "Bash(cmdkey:*)",
+      "Bash(echo:*)",
+      "Bash(git credential:*)"
     ]
   }
 }
