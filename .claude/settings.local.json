@@ -13,7 +13,13 @@
       "Bash(git config:*)",
       "Bash(cmdkey:*)",
       "Bash(echo:*)",
-      "Bash(git credential:*)"
+      "Bash(git credential:*)",
+      "Bash(where:*)",
+      "Bash(reg query \"HKLM\\\\SOFTWARE\\\\Microsoft\\\\Microsoft SQL Server\" /s)",
+      "Bash(wmic product:*)",
+      "Bash(reg query \"HKLM\\\\SOFTWARE\\\\WOW6432Node\\\\Microsoft\\\\Windows\\\\CurrentVersion\\\\Uninstall\" /s)",
+      "Bash(ls:*)",
+      "Bash(winget list:*)"
     ]
   }
 }
