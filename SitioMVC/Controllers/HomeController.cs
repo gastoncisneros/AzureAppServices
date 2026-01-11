@@ -6,14 +6,22 @@ namespace SitioMVC.Controllers;
 
 public class HomeController : Controller
 {
+    private readonly IConfiguration _configuration;
+
+    public HomeController(IConfiguration configuration)
+    {
+        _configuration = configuration;
+    }
+
     public IActionResult Index()
     {
-        List<Persona> personas = new()
+        List<Persona> personas = new List<Persona>();
+        int cantidadPersonas = _configuration.GetValue<int>("cantidad-personas");
+
+        for (int i = 0; i < cantidadPersonas; i++)
         {
-            new Persona { Id = Guid.NewGuid(), Nombre = "Juan" },
-            new Persona { Id = Guid.NewGuid(), Nombre = "María" },
-            new Persona { Id = Guid.NewGuid(), Nombre = "Pedro" }
-        };
+            personas.Add(new Persona { Id = Guid.NewGuid(), Nombre = $"Persona {i}" });
+        }
 
         return View(personas);
     }
